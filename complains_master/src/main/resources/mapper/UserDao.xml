@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.svtcc.dao.UserDao">
+    <select id="selectUserComplain" parameterType="String" resultType="com.svtcc.bean.ComplainBean">
+        select *from springweb.tb_complain where contact=#{contact} and status=1
+    </select>
+
+    <select id="selectUserComplainByName" resultType="com.svtcc.bean.ComplainBean" parameterType="String">
+        select *from springweb.tb_complain where income like concat('%',#{income},'%')
+    </select>
+
+    <update id="updateUserComplainStatus" parameterType="int">
+        update springweb.tb_complain set status=2 where cid=#{cid}
+    </update>
+
+    <select id="selectHisComplain" parameterType="String" resultType="com.svtcc.bean.ComplainBean">
+        select *from springweb.tb_complain where contact=#{contact} and status=2
+    </select>
+
+    <delete id="deleteHisComplain" parameterType="int">
+        delete from springweb.tb_complain where cid=#{cid}
+    </delete>
+</mapper>

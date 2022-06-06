@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.svtcc.dao.HistoryDao">
+    <insert id="addHistoryData" parameterType="com.svtcc.bean.ComplainBean">
+        insert springweb.tb_history (income,contact,tel,status,type,content,number) values (#{income},#{contact},#{tel},
+        #{status},#{type},#{content},#{number})
+    </insert>
+
+    <select id="selectAllHistoryData" resultType="com.svtcc.bean.HistoryBean">
+        select *from springweb.tb_history
+    </select>
+
+    <delete id="deleteHistoryData" parameterType="int">
+        delete from springweb.tb_history where hid= #{hid}
+    </delete>
+</mapper>

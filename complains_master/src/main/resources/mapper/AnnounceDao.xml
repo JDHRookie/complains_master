@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.svtcc.dao.AnnounceDao">
+    <insert id="addAnnounce" parameterType="com.svtcc.bean.AnnounceBean">
+        insert springweb.tb_announce (title,content,announcetime) values (#{title},#{content},#{announcetime})
+    </insert>
+
+    <delete id="deleteAnnounce" parameterType="int">
+        delete from springweb.tb_announce where mid=#{mid}
+    </delete>
+
+    <update id="updateAnnounce" parameterType="com.svtcc.bean.AnnounceBean">
+        update springweb.tb_announce
+        <set>
+            <if test="title!=null and title!=''">
+                title=#{title},
+            </if>
+            <if test="content!=null and content!=''">
+                content=#{content},
+            </if>
+            <if test="announcetime!=null and announcetime!=''">
+                announcetime=#{announcetime},
+            </if>
+        </set>
+        where mid = #{mid}
+    </update>
+
+    <select id="selectAllAnnounce" resultType="com.svtcc.bean.AnnounceBean">
+        select *from springweb.tb_announce
+    </select>
+</mapper>

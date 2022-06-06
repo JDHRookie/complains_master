@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.svtcc.dao.ComplainDao">
+    <select id="selectAll" resultType="com.svtcc.bean.ComplainBean">
+        select *from springweb.tb_complain
+    </select>
+
+    <select id="selectComplainsBySth" parameterType="String" resultType="com.svtcc.bean.ComplainBean">
+        select *from springweb.tb_complain where contact like ('%' #{contact} '%')
+    </select>
+
+    <select id="selectComplainByName" resultType="com.svtcc.bean.ComplainBean" parameterType="String">
+        select *from springweb.tb_complain where type like concat('%',#{type},'%')
+    </select>
+
+    <delete id="deleteComplainsById" parameterType="int">
+        delete from springweb.tb_complain where cid = #{cid}
+    </delete>
+
+    <update id="updateComplainsById" parameterType="com.svtcc.bean.ComplainBean">
+        update springweb.tb_complain
+        <set>
+            <if test="income!=null and income!=''">
+                income=#{income},
+            </if>
+            <if test="contact!=null and contact!=''">
+                contact=#{contact},
+            </if>
+            <if test="tel!=null and tel!=''">
+                tel=#{tel},
+            </if>
+            <if test="type!=null and type!='' ">
+                type=#{type},
+            </if>
+            <if test="content!=null and type!='' ">
+                content=#{content},
+            </if>
+            <if test="number!=null and number!=''">
+                number=#{number},
+            </if>
+        </set>
+        where cid = #{cid}
+    </update>
+
+
+    <update id="updateComplainStatus">
+        update springweb.tb_complain set status=1
+    </update>
+
+    <select id="selectComplainById" resultType="com.svtcc.bean.ComplainBean" parameterType="int">
+        select *from springweb.tb_complain where cid=#{cid}
+    </select>
+</mapper>

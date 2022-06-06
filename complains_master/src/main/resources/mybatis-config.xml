@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <mappers>
+        <mapper resource="mapper/AdminDao.xml"></mapper>
+        <mapper resource="mapper/ComplainDao.xml"></mapper>
+        <mapper resource="mapper/TypeDao.xml"></mapper>
+        <mapper resource="mapper/UserDao.xml"></mapper>
+        <mapper resource="mapper/HistoryDao.xml"></mapper>
+        <mapper resource="mapper/AnnounceDao.xml"></mapper>
+    </mappers>
+</configuration>

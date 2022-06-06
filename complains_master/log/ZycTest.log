@@ -1,0 +1,42 @@
+2022-05-30 22:29:32 [localhost-startStop-1] INFO  ContextLoader:271 - Root WebApplicationContext: initialization started
+2022-05-30 22:29:33 [localhost-startStop-1] INFO  ContextLoader:307 - Root WebApplicationContext initialized in 769 ms
+2022-05-30 22:29:33 [localhost-startStop-1] INFO  DispatcherServlet:525 - Initializing Servlet 'DispatcherServlet'
+2022-05-30 22:29:34 [localhost-startStop-1] INFO  DispatcherServlet:547 - Completed initialization in 494 ms
+2022-05-30 22:30:44 [localhost-startStop-1] INFO  ContextLoader:271 - Root WebApplicationContext: initialization started
+2022-05-30 22:30:45 [localhost-startStop-1] INFO  ContextLoader:307 - Root WebApplicationContext initialized in 861 ms
+2022-05-30 22:30:45 [localhost-startStop-1] INFO  DispatcherServlet:525 - Initializing Servlet 'DispatcherServlet'
+2022-05-30 22:30:45 [localhost-startStop-1] INFO  DispatcherServlet:547 - Completed initialization in 517 ms
+2022-05-30 22:30:54 [localhost-startStop-1] INFO  ContextLoader:271 - Root WebApplicationContext: initialization started
+2022-05-30 22:30:55 [localhost-startStop-1] INFO  ContextLoader:307 - Root WebApplicationContext initialized in 714 ms
+2022-05-30 22:30:55 [localhost-startStop-1] INFO  DispatcherServlet:525 - Initializing Servlet 'DispatcherServlet'
+2022-05-30 22:30:55 [localhost-startStop-1] INFO  DispatcherServlet:547 - Completed initialization in 610 ms
+2022-05-30 22:32:39 [localhost-startStop-1] INFO  ContextLoader:271 - Root WebApplicationContext: initialization started
+2022-05-30 22:32:40 [localhost-startStop-1] INFO  ContextLoader:307 - Root WebApplicationContext initialized in 714 ms
+2022-05-30 22:32:40 [localhost-startStop-1] INFO  DispatcherServlet:525 - Initializing Servlet 'DispatcherServlet'
+2022-05-30 22:32:40 [localhost-startStop-1] INFO  DispatcherServlet:547 - Completed initialization in 462 ms
+2022-05-30 22:33:59 [localhost-startStop-1] INFO  ContextLoader:271 - Root WebApplicationContext: initialization started
+2022-05-30 22:34:00 [localhost-startStop-1] INFO  ContextLoader:307 - Root WebApplicationContext initialized in 904 ms
+2022-05-30 22:34:00 [localhost-startStop-1] INFO  DispatcherServlet:525 - Initializing Servlet 'DispatcherServlet'
+2022-05-30 22:34:00 [localhost-startStop-1] INFO  DispatcherServlet:547 - Completed initialization in 543 ms
+2022-05-31 10:03:45 [localhost-startStop-1] INFO  ContextLoader:271 - Root WebApplicationContext: initialization started
+2022-05-31 10:03:46 [localhost-startStop-1] INFO  ContextLoader:307 - Root WebApplicationContext initialized in 990 ms
+2022-05-31 10:03:46 [localhost-startStop-1] INFO  DispatcherServlet:525 - Initializing Servlet 'DispatcherServlet'
+2022-05-31 10:03:47 [localhost-startStop-1] INFO  DispatcherServlet:547 - Completed initialization in 564 ms
+2022-05-31 10:04:00 [http-bio-8080-exec-1] WARN  PageNotFound:1251 - No mapping for GET /SpringWeb/admin/login
+2022-05-31 11:40:04 [localhost-startStop-1] INFO  ContextLoader:271 - Root WebApplicationContext: initialization started
+2022-05-31 11:40:05 [localhost-startStop-1] INFO  ContextLoader:307 - Root WebApplicationContext initialized in 818 ms
+2022-05-31 11:40:05 [localhost-startStop-1] INFO  DispatcherServlet:525 - Initializing Servlet 'DispatcherServlet'
+2022-05-31 11:40:05 [localhost-startStop-1] INFO  DispatcherServlet:547 - Completed initialization in 597 ms
+2022-05-31 11:40:26 [http-bio-8080-exec-9] WARN  PageNotFound:1251 - No mapping for GET /SpringWeb/selectNewComplains
+2022-05-31 11:42:42 [localhost-startStop-1] INFO  ContextLoader:271 - Root WebApplicationContext: initialization started
+2022-05-31 11:42:43 [localhost-startStop-1] INFO  ContextLoader:307 - Root WebApplicationContext initialized in 832 ms
+2022-05-31 11:42:43 [localhost-startStop-1] INFO  DispatcherServlet:525 - Initializing Servlet 'DispatcherServlet'
+2022-05-31 11:42:43 [localhost-startStop-1] INFO  DispatcherServlet:547 - Completed initialization in 554 ms
+2022-05-31 11:45:59 [localhost-startStop-1] INFO  ContextLoader:271 - Root WebApplicationContext: initialization started
+2022-05-31 11:46:00 [localhost-startStop-1] INFO  ContextLoader:307 - Root WebApplicationContext initialized in 928 ms
+2022-05-31 11:46:00 [localhost-startStop-1] INFO  DispatcherServlet:525 - Initializing Servlet 'DispatcherServlet'
+2022-05-31 11:46:01 [localhost-startStop-1] INFO  DispatcherServlet:547 - Completed initialization in 485 ms
+2022-05-31 11:47:16 [localhost-startStop-1] INFO  ContextLoader:271 - Root WebApplicationContext: initialization started
+2022-05-31 11:47:17 [localhost-startStop-1] INFO  ContextLoader:307 - Root WebApplicationContext initialized in 955 ms
+2022-05-31 11:47:17 [localhost-startStop-1] INFO  DispatcherServlet:525 - Initializing Servlet 'DispatcherServlet'
+2022-05-31 11:47:17 [localhost-startStop-1] INFO  DispatcherServlet:547 - Completed initialization in 523 ms

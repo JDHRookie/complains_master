@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.svtcc.dao.AdminDao">
+    <select id="selectAdmin" resultType="com.svtcc.bean.AdminBean" parameterType="String">
+        select *from springweb.tb_admin where username=#{username} and password=#{password}
+    </select>
+    <select id="select" resultType="com.svtcc.bean.AdminBean"  parameterType="int">
+        select *from springweb.tb_admin where aid=1
+    </select>
+
+    <select id="selectAllAdmin" resultType="com.svtcc.bean.AdminBean">
+        select *from springweb.tb_admin
+    </select>
+
+    <select id="selectAdminByName" resultType="com.svtcc.bean.AdminBean">
+        select *from springweb.tb_admin where realname like concat('%' #{realname} '%')
+    </select>
+
+    <insert id="insertAdmin" parameterType="com.svtcc.bean.AdminBean">
+        insert springweb.tb_admin (username,realname,password,tel,email) values (#{username},#{realname},#{password},#{tel},#{email})
+    </insert>
+
+    <delete id="deleteAdmin" parameterType="int">
+        delete from springweb.tb_admin where aid=#{aid}
+    </delete>
+
+    <update id="updateAdminById" parameterType="com.svtcc.bean.AdminBean">
+        update springweb.tb_admin
+        <set>
+            <if test="username!=null and username!=''">
+                username=#{username},
+            </if>
+            <if test="realname!=null and realname!=''">
+                realname=#{realname},
+            </if>
+            <if test="password!=null and password!=''">
+                password=#{password},
+            </if>
+            <if test="tel!=null and tel!='' ">
+                tel=#{tel},
+            </if>
+            <if test="email!=null and email!='' ">
+                email=#{email},
+            </if>
+        </set>
+        where aid = #{aid}
+    </update>
+
+    <select id="selectAdminUserName" resultType="com.svtcc.bean.AdminBean" parameterType="String">
+        select *from springweb.tb_admin where username=#{username}
+    </select>
+
+    <select id="selectCommonAdmin" resultType="com.svtcc.bean.AdminBean">
+        select *from springweb.tb_admin where status=1
+    </select>
+
+    <select id="selectAdminById" resultType="com.svtcc.bean.AdminBean">
+        select *from springweb.tb_admin where aid=#{aid}
+    </select>
+</mapper>
